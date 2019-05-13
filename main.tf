@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "b" {
   bucket = "jmartinson-demo-bucket"
-  acl    = "public"
+  acl    = "private"
 
   tags = {
     owner = "jmartinson@hashicorp.com"
